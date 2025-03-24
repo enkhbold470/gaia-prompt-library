@@ -17,29 +17,19 @@ The GAIA Prompt Library aims to be a comprehensive resource for users of AMD's G
 ## Prompt Categories
 
 ### Creative Writing
-- [Story Generation](prompts/creative/story-generation.md)
-- [Poetry and Lyrics](prompts/creative/poetry-lyrics.md)
-- [Character Development](prompts/creative/character-development.md)
+- [Story Generation](prompts/creative/story-generation.md) - Prompts for generating engaging short stories with GAIA models
 
 ### Productivity
-- [Email Composition](prompts/productivity/email-composition.md)
-- [Note Taking](prompts/productivity/note-taking.md)
-- [Task Planning](prompts/productivity/task-planning.md)
+- [Task Planner](prompts/productivity/task-planner.md) - Prompts for project planning and task management optimized for GAIA
 
 ### Educational
-- [Study Guides](prompts/educational/study-guides.md)
-- [Concept Explanation](prompts/educational/concept-explanation.md)
-- [Problem Solving](prompts/educational/problem-solving.md)
+- [Concept Explainer](prompts/educational/concept-explainer.md) - Prompts for explaining complex concepts clearly and concisely
 
 ### Technical
-- [Code Explanation](prompts/technical/code-explanation.md)
-- [Bug Fixing](prompts/technical/bug-fixing.md)
-- [Code Generation](prompts/technical/code-generation.md)
+- [Code Generation](prompts/technical/code-generation.md) - Prompts for efficient code generation with GAIA models
 
 ### Conversational
-- [Interview Simulation](prompts/conversational/interview-simulation.md)
-- [Debate Partner](prompts/conversational/debate-partner.md)
-- [Language Practice](prompts/conversational/language-practice.md)
+- [Character Chat](prompts/conversational/character-chat.md) - Prompts for engaging character-based conversations
 
 ## Optimization Techniques
 
@@ -83,6 +73,26 @@ To use these prompts:
 2. Browse to the prompt category you're interested in
 3. Copy the prompt template and fill in the required information
 4. Paste the completed prompt into GAIA's web interface or CLI
+
+## Performance Tips
+
+For best results with GAIA's hardware:
+
+1. **Model Selection**: 
+   - For quick responses: Use Phi-3.5 Mini or Llama-3.2 1B
+   - For more complex tasks: Use Llama-3.2 3B or Mistral 7B
+
+2. **Response Length**:
+   - Set explicit word/token limits in your prompts
+   - For NPU-optimized performance, aim for responses under 200 words
+
+3. **Context Management**:
+   - Be specific about what information is most important
+   - Structure prompts to focus the model on key details
+
+4. **Batching Considerations**:
+   - When using the same model for multiple prompts, batch them when possible
+   - This is more efficient than loading/unloading models between prompts
 
 ## Contributing
 
